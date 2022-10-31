@@ -7,5 +7,7 @@ router.post("/todo/create", todos.create);
 router.get("/todo/:id", todos.show);
 router.delete("/todo/delete/:id", todos.delete);
 router.put("/todo/update/:id", todos.update);
+router.get("/todo/searchByTitle/:title", todos.searchByTitle);
+router.delete("/todo/deleteall", todos.deleteAll);
 
 module.exports = router;
